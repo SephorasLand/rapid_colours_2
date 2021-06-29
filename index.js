@@ -32,7 +32,7 @@ function nextSequence(){
       }, 200);
       startOver();
     }
-  }, 1000)
+  }, 2000)
   isOnTime = false;
 }
 

@@ -5,13 +5,16 @@ var hasBeenPressed = false;
 var level = 0;
 var isOnTime = false;
 var timerHandler = 0;
+var changingTime = 2000;
 
 function nextSequence(){
+  changingTime -= 100;
+  console.log(changingTime);
   if (timerHandler != 0) {
     clearTimeout(timerHandler);
     timerHandler = 0;
   }
-  var randomNumber = Math.floor(Math.random() * 6);
+  var randomNumber = Math.floor(Math.random() * buttonColours.length);
   var randomChosenColour = buttonColours[randomNumber];
   gamePattern.push(randomChosenColour);
   level++;
@@ -28,7 +31,7 @@ function nextSequence(){
       }, 200);
       startOver();
     }
-  }, 2000)
+  }, changingTime)
   isOnTime = false;
 }
 
@@ -88,6 +91,7 @@ function startOver(){
   gamePattern = [];
   userClickedPattern = [];
   isOnTime = false;
+  changingTime = 2000;
   setTimeout(function(){
     hasBeenPressed = false;
   }, 200);

@@ -32,11 +32,31 @@ h2 {
 
 .btn {
   display: inline-block;
-  height: 200px;
-  margin: 52px;
-  width: 200px;
+  height: 150px;
+  margin-left: 52px;
+  margin-right: 52px;
+  margin-top: 52px;
+  width: 150px;
   border: 10px solid black;
-  border-radius: 20%;
+  border-radius: 50%;
+}
+
+.btn-sounds{
+  display: inline-block;
+  height: 70px;
+  width: 150px;
+  border: 5px solid black;
+  margin-bottom: 80px;
+  border-radius: 0%;
+}
+
+.btn-sounds2{
+  display: inline-block;
+  height: 70px;
+  width: 150px;
+  border: 5px solid black;
+  margin-top: -63px;
+  border-radius: 0%;
 }
 
 .red {
@@ -57,6 +77,14 @@ h2 {
 
 .white {
   background-color: white;
+}
+
+.black {
+  background-color: black;
+}
+
+.grey {
+  background-color: grey;
 }
 
 .game-over {

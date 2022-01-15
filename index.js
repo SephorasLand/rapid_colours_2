@@ -55,7 +55,6 @@ $(".btn").on("click", function(event){
     var userChosenColour = event.target.id;
     userClickedPattern.push(userChosenColour);
     animatePress(userChosenColour);
-    //playSound(userChosenColour);
     checkAnswer(userClickedPattern.length - 1);
   } else {
     $("h1").text("Level " + level);
@@ -91,7 +90,7 @@ function startOver(){
   gamePattern = [];
   userClickedPattern = [];
   isOnTime = false;
-  changingTime = 2000;
+  changingTime = 1000;
   setTimeout(function(){
     hasBeenPressed = false;
   }, 200);

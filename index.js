@@ -5,7 +5,7 @@ var hasBeenPressed = false;
 var level = 0;
 var isOnTime = false;
 var timerHandler = 0;
-var changingTime = 2000;
+var changingTime = 1000;
 
 function nextSequence(){
   changingTime -= 100;

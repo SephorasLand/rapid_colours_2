@@ -5,7 +5,7 @@ var hasBeenPressed = false;
 var level = 0;
 var isOnTime = false;
 var timerHandler = 0;
-var changingTime = 800;
+var changingTime = 900;
 
 function nextSequence(){
   changingTime -= 100;
@@ -90,7 +90,7 @@ function startOver(){
   gamePattern = [];
   userClickedPattern = [];
   isOnTime = false;
-  changingTime = 800;
+  changingTime = 900;
   setTimeout(function(){
     hasBeenPressed = false;
   }, 200);
